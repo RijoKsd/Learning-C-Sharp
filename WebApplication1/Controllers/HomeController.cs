@@ -4,9 +4,9 @@ namespace WebApplication1.Controllers
 {
     public class HomeController : Controller
     {
-       public string Index()
+       public IActionResult Index()
         {
-            return "Hello world from Action Index";
+            return View();
         }
         public string About()
         {
