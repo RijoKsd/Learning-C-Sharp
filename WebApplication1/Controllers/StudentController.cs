@@ -6,7 +6,8 @@ namespace WebApplication1.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            var students = new List<string> { "Rijo", "Sebasitan" };
+            return View(students);
         }
     }
 }
