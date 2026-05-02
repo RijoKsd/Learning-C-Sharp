@@ -1,12 +1,14 @@
-﻿@model List<string>
+﻿@using WebApplication1.Model;
+
+ @model List<Student> 
 
 <h2> Student Page Working</h2>
 
-<h3>Total: @Model.Count</h3>
+@* <h3>Total: @Model.Count</h3> *@
 
 <ul>
     @foreach(var s in Model)
     {
-        <li>@s</li>
+        <li>@s.Name</li>
     }
 </ul>
