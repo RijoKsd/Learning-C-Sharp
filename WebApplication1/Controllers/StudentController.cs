@@ -24,6 +24,7 @@ namespace MVCApp.Controllers
         public IActionResult Create (Student student)
         {
             //return Content($"Received student: {student.Name}");
+            TempData["message"] = "Student added successfully";
             return RedirectToAction("Index");
         }
     }
